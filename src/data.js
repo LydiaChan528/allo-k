@@ -7,17 +7,13 @@ var options = {
 
 var audio = new Audio("/sounds/notif_test.mp3");
 
-var reminders = [
-	{title: "Sleeep", msg: "Hai", hr: 2, min: 0, img: "/icons/favicon_full.png"},
-	{title: "No sleeep", msg: "hola", hr: 2, min: 1, img: "/icons/favicon_full.png"}
-];
-var ree = "Test";
+var reminders = "Default";
 
 //get the reminder list
 function readData() {
 	loadJSON(function(resp) {
-		ree = JSON.parse(resp);
-		console.log(ree); 
+		reminders = JSON.parse(resp)["default"];
+		console.log(reminders);
 	});
 	console.log("Read data!");
 }

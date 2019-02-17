@@ -9,7 +9,11 @@ Download Chrome browser.
 2) Go to chrome://extensions and load unpacked the folder.
 
 ## TODO
-chrome.storage api to link options and background.js  
+### Must-Haves
 options.html  
+get data from options.html and store it  
 graphics  
+
+### Stretch
 custom audio  
+improved method of notification  

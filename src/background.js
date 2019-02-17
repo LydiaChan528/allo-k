@@ -16,6 +16,9 @@ chrome.storage.onChanged.addListener(function(changes, areaName) {
 	readData();
 });
 
+//reads reminder data
+readData();
+
 //check every minute for reminder
 var loop = setInterval(function() {
 	var d = new Date();

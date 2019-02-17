@@ -1,6 +1,6 @@
 {
   "default" : [
-    {"title": "Sleeep", "msg": "Hai", "hr": 2, "min": 0, "img": "/icons/favicon_full.png"},
-    {"title": "No sleeep", "msg": "hola", "hr": 2, "min": 1, "img": "/icons/favicon_full.png"}
+    {"title": "Sleeep", "msg": "Hai", "hr": 4, "min": 4, "img": "/icons/favicon_full.png"},
+    {"title": "No sleeep", "msg": "hola", "hr": 4, "min": 5, "img": "/icons/favicon_full.png"}
   ]
 }
