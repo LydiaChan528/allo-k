@@ -2,7 +2,7 @@ alert("Starting MadeCafe...");
 
 //test notif
 audio.play();
-chrome.notifications.create(options, callback);
+chrome.notifications.create(options, notifBack);
 
 //open options if this is first install
 chrome.runtime.onInstalled.addListener(function(object) {
@@ -27,12 +27,12 @@ var loop = setInterval(function() {
 			options.title = r.title;
 			options.message = r.msg;
 			options.iconUrl = r.img;
-			chrome.notifications.create(options, callback);
+			chrome.notifications.create(options, notifBack);
 		}
 	});
 }, 60000);
 
 //debug
-function callback() {
+function notifBack() {
 	console.log("Notified!");
 }
