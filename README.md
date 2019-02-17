@@ -12,3 +12,4 @@ Download Chrome browser.
 chrome.storage api to link options and background.js  
 options.html  
 graphics  
+custom audio  

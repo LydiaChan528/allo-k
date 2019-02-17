@@ -10,6 +10,12 @@ chrome.runtime.onInstalled.addListener(function(object) {
 	chrome.tabs.create({'url': "/src/options.html" });
 });
 
+//reinstantiates reminders if options changed
+chrome.storage.onChanged.addListener(function(changes, areaName) {
+	console.log("User made changes!");
+	readData();
+});
+
 //check every minute for reminder
 var loop = setInterval(function() {
 	var d = new Date();
@@ -24,7 +30,7 @@ var loop = setInterval(function() {
 			chrome.notifications.create(options, callback);
 		}
 	});
-}, 30000);
+}, 60000);
 
 //debug
 function callback() {

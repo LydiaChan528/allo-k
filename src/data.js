@@ -7,8 +7,12 @@ var options = {
 
 var audio = new Audio("/sounds/notif_test.mp3");
 
-//get the reminder list
 var reminders = [
 	{title: "Sleeep", msg: "Hai", hr: 2, min: 0, img: "/icons/favicon_full.png"},
 	{title: "No sleeep", msg: "hola", hr: 2, min: 1, img: "/icons/favicon_full.png"}
 ];
+
+//get the reminder list
+function readData() {
+	console.log("Read data!");
+}
