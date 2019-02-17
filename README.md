@@ -1,13 +1,10 @@
-# MadeCafe
-MadeCafe Chrome Extension, helps you gitgood :P
+# Allo-K
+Chrome Extension courtesy of MadeCafe 2019
 
 ## Getting Started
 ### Prerequisites
 Download Chrome browser.
-### Installing
-1) Download zip and unzip or clone git if u good.  
-2) Go to chrome://extensions and load unpacked the folder.
 
-## TODO
-custom audio  
-improved method of notification  
+### Installing
+1) Download zip and unzip or clone git.  
+2) Go to chrome://extensions and load unpacked the folder.
