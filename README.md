@@ -5,7 +5,7 @@ MadeCafe Chrome Extension, helps you gitgood :P
 ### Prerequisites
 Download Chrome browser.
 ### Installing
-Download zip and unzip or clone git if u good.
+Download zip and unzip or clone git if u good.  
 Go to chrome://extensions and load unpacked the folder.
 
 ## TODO
