@@ -1,5 +1,86 @@
-<html>
+<!-- <html>
 	<body>
 		<h1> Options! </h1>
+	</body>
+</html> -->
+
+<!DOCTYPE html>
+	<html>
+
+
+	<head>
+		<title>MadeCafe Options</title>
+		<link rel="stylesheet" type="text/css" href="options.css">
+	</head>
+
+	<body>
+
+		<section aria-label="Title">
+			<div class="colorbox box_gray">
+				<h1>Welcome</h1>
+			</div>
+		</section>
+
+		<section aria-label="Introduction">
+			<div class="colorbox box_light_green">
+				<h2>Who are we?</h2>
+				<p>[intro #1]</p>
+
+				<h2>How does it work?</h2>
+				<p>[description #1]</p>
+			</div>
+		</section>
+
+		<section aria-label="Step 1">
+			<div class="colorbox box_dark_green">
+				<h2>Step 1</h2>
+				<p>Choose your starter pack</p>
+
+				<img src="../icons/student.svg" alt="One energy drink" align="center" style="width:27%;height:30%;" onclick = "recordStudent();">
+				<img src="../icons/deadline.svg" alt="Two energy drinks" align="center" style="width:35%;height:35%;" onclick = "recordDeadline();">
+				<img src="../icons/hackathon.svg" alt="Many energy drink" align="center" style="width:35%;height:35%;" onclick = "recordHackathon();">
+			</div>
+		</section>
+
+		<section aria-label="Step 2">
+			<div class="colorbox box_gray">
+				<h2>Step 2</h2>
+				<p>Answer these questions</p>
+			</div>
+		</section>
+
+		<section aria-label="Step 2.5">
+			<div class="colorbox box_light_green">
+				<h2>Step 2.5</h2>
+				<p>For hackathon and deadline</p>
+			</div>
+		</section>
+
+		<section aria-label="Step 3">
+			<div class="colorbox box_dark_green">
+				<h2>Step 3</h2>
+				<p>Download!</p>
+			</div>
+		</section>
+
+		<!-- </section> -->
+
+		Favorite color:
+		<select id="color">
+		 <option value="red">red</option>
+		 <option value="green">green</option>
+		 <option value="blue">blue</option>
+		 <option value="yellow">yellow</option>
+		</select>
+
+		<label>
+		  <input type="checkbox" id="like">
+		  I like colors.
+		</label>
+
+		<div id="status"></div>
+		<button id="save">Save</button>
+
+		<script src="options.js"></script>
 	</body>
 </html>
