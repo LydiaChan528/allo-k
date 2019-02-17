@@ -13,6 +13,7 @@ Download Chrome browser.
 options.html  
 get data from options.html and store it  
 graphics  
+messages  
 
 ### Stretch
 custom audio  
