@@ -16,10 +16,10 @@
 		"notifications"
 	],
 
-	// replace with our graphics
-	"web_accessible_resources": [
-		"icons/TreeHacks-white-48.png"
-	],
+	"background": {
+		"scripts": ["src/background.js"],
+		"persistent": false
+	},
 
 	"options_ui": {
 		"page": "src/options.html",
