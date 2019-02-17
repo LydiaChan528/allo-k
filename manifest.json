@@ -14,11 +14,21 @@
 		"storage" // Allows access to chrome.storage API
 	],
 
+	"chrome_url_overrides": {
+		"newtab": "src/newtab.html"
+	},
+
+	"options_ui": {
+		"page": "src/options.html",
+		"open_in_tab": false
+	},
+
 	"browser_action": {
 		"default_icon": "icons/TreeHacks-white-19.png",
 		"default_title": "MadeCafe",
 		"default_popup": "src/popup.html"
 	},
+
 	"content_scripts": [{
 		"matches": [
 			"*://*/*"
