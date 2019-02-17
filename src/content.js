@@ -10,7 +10,7 @@ for (var i = 0; i < elements.length; i++) {
 
 		if (node.nodeType === 3) {
 			var text = node.nodeValue;
-			var replacedText = text.replace(/stanford/gi, "Butt");
+			var replacedText = text.replace(/tree/gi, "Butt");
 
 			if (replacedText !== text) {
 				element.replaceChild(document.createTextNode(replacedText), node);
