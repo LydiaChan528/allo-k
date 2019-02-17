@@ -5,17 +5,17 @@ h1 {
 
 h2 {
 	text-align: center;
-	font-size: 50px;
+	font-size: 100px;
 }
 
 h3 {
 	text-align: center;
-	font-size: 25px;
+	font-size: 55px;
 }
 
 p {
 	text-align: center;
-	font-size: 20px;
+	font-size: 40px;
 }
 
 html,body {
@@ -24,7 +24,7 @@ html,body {
 }
 
 .colorbox {
-	padding: 25% 12%;
+	padding: 25% 20%;
 	/*position: fixed;
 	top: 0px;
 	bottom: 0px;
@@ -51,7 +51,7 @@ html,body {
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 50px;
+  margin: 8px 0;
   display: inline-block;
   background-color: #8EC665;
   color: white;
@@ -62,7 +62,7 @@ input[type=text] {
 label {
 	/*font-family: inconsolata;*/
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 30px;
 	vertical-align: bottom;
 /*	display: block;
 	width: 500px;
@@ -70,7 +70,21 @@ label {
 	/*color: #3CBC8D;*/
 }
 
-/*.form_input {
+input[type=submit] {
+  width: 103%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.hack_mode {
+	visibility: hidden;
+}
+
+./*form_input {
 	text-align: center;
 	font-size: 25px;
 	height: 25%;
@@ -78,11 +92,4 @@ label {
 	position: relative;
 	margin : 0 auto;
 }
-
-.deadline_input {
-	visibility: hidden;
-}
-
-.submit_input {
-
-}*/
+*/
