@@ -33,7 +33,7 @@ function readData(callback) {
 		oneOffReminders = parseObj[syncData.prof]["oneOff"];
 		//user options
 		if (syncData.prof != "default") {
-			oneOffReminders[0].hr = parseInt(syncData.deadline);
+			oneOffReminders[0].hr = parseFloat(syncData.deadline);
 		}
 		//ahhh such bad code
 		var tim = getTimes(syncData.sleep);
