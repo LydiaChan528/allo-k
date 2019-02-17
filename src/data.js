@@ -7,13 +7,26 @@ var options = {
 
 var audio = new Audio("/sounds/notif_test.mp3");
 
-var reminders = "Default";
+var setTimeReminders = "def";
+var intervalReminders = "def";
+var oneOffReminders = "def";
+var syncData = "def";
 
 //get the reminder list
-function readData() {
+function readData(callback) {
 	loadJSON(function(resp) {
-		reminders = JSON.parse(resp)["default"];
-		console.log(reminders);
+		var parseObj = JSON.parse(resp);
+		console.log(parseObj);
+		var prof = "default";
+		setTimeReminders = parseObj[prof]["setTimes"];
+		intervalReminders = parseObj[prof]["interval"];
+		oneOffReminders = parseObj[prof]["oneOff"];
+		console.log(setTimeReminders);
+		console.log(intervalReminders);
+		console.log(oneOffReminders);
+
+		//used for loadTimers()
+		callback();
 	});
 	console.log("Read data!");
 }

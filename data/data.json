@@ -1,14 +1,50 @@
 {
-  "default": [
-    {"title": "Sleeep", "msg": "Hai", "hr": 4, "min": 4, "img": "/icons/favicon_full.png"},
-    {"title": "No sleeep", "msg": "hola", "hr": 4, "min": 5, "img": "/icons/favicon_full.png"}
-  ],
+  "default": {
+    "setTimes": [
+      {"title": "Sleep", "msg": "Sleep is good for the soul.", "hr": 23, "min": 30, "img": "/icons/favicon_full.png"},
+      {"title": "Breakfast", "msg": "It's the most important meal of the day.", "hr": 9, "min": 0, "img": "/icons/favicon_full.png"},
+      {"title": "Lunch", "msg": "Go eat lunch.", "hr": 12, "min": 0, "img": "/icons/favicon_full.png"},
+      {"title": "Dinner", "msg": "Go eat dinner.", "hr": 18, "min": 0, "img": "/icons/favicon_full.png"}
+    ],
+    "interval": [
+      {"title": "Water", "msg": "Drink it.", "min": 45, "img": "/icons/favicon_full.png"},
+      {"title": "Take a Break", "msg": "Stand up.", "min": 45, "img": "/icons/favicon_full.png"}
+    ],
+    "oneOff": [
+      {"title": "Error", "msg": "This was never suppposed to happen.", "hr": 25000, "img": "/icons/favicon_full.png"}
+    ]
+  },
 
-  "deadline": [
+  "deadline": {
+    "setTimes": [
+      {"title": "Sleeep", "msg": "Sorry bubby, sleep is for the weak.", "hr": 2, "min": 30, "img": "/icons/favicon_full.png"},
+      {"title": "Breakfast", "msg": "Take a snack break.", "hr": 9, "min": 0, "img": "/icons/favicon_full.png"},
+      {"title": "Lunch", "msg": "Take another snack break.", "hr": 12, "min": 0, "img": "/icons/favicon_full.png"},
+      {"title": "Dinner", "msg": "Snack break 3/3. Almost there.", "hr": 18, "min": 0, "img": "/icons/favicon_full.png"}
+    ],
+    "interval": [
+      {"title": "Water", "msg": "Hydrate.", "min": 60, "img": "/icons/favicon_full.png"},
+      {"title": "Take a Break", "msg": "No breaks. Almost there.", "min": 45, "img": "/icons/favicon_full.png"}
+    ],
+    "oneOff": [
+      {"title": "Done", "msg": "Congrats, you're done!", "hr": 69, "img": "/icons/favicon_full.png"}
+    ]
+  },
 
-  ],
-
-  "hackathon": [
-
-  ]
+  "hackathon": {
+    "setTimes": [
+      {"title": "No sleeep", "msg": "We don't have time for that.", "hr": 3, "min": 0, "img": "/icons/favicon_full.png"},
+      {"title": "Breakfast", "msg": "Take an acai bowl break.", "hr": 8, "min": 30, "img": "/icons/favicon_full.png"},
+      {"title": "Lunch", "msg": "Find yourself outside with food.", "hr": 12, "min": 0, "img": "/icons/favicon_full.png"},
+      {"title": "Afternoon snack", "msg": "Go get that boba.", "hr": 14, "min": 55, "img": "/icons/favicon_full.png"},
+      {"title": "Dinner", "msg": "Power through. Grab a burrito.", "hr": 19, "min": 0, "img": "/icons/favicon_full.png"}
+    ],
+    "interval": [
+      {"title": "Water", "msg": "Don't spill.", "min": 60, "img": "/icons/favicon_full.png"},
+      {"title": "Caffeine", "msg": "Recharge with Red Bull.", "min": 120, "img": "/icons/favicon_full.png"}
+    ],
+    "oneOff": [
+      {"title": "Submit Your Project", "msg": "Go take a shower! You smell.", "hr": 69, "img": "/icons/favicon_full.png"}
+    ]
+  }
 }
