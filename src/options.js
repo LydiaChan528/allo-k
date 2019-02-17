@@ -1,9 +1,8 @@
+var profi = "default";
+
 function recordDefault()
 {
-  console.log("def");
-  chrome.storage.sync.set({
-    prof: "default"
-  }, function() {});
+  profi = "default";
   function show() {
     document.getElementById("hack_mode").style.visibility= "hidden" ;
   }
@@ -12,9 +11,7 @@ function recordDefault()
 
 function recordDeadline()
 {
-  chrome.storage.sync.set({
-    prof: "deadline"
-  }, function() {});
+  profi = "deadline";
   function show() {
     document.getElementById("hack_mode").style.visibility= "visible" ;
   }
@@ -23,9 +20,7 @@ function recordDeadline()
 
 function recordHackathon()
 {
-  chrome.storage.sync.set({
-    prof: "hackathon"
-  }, function() {});
+  profi = "hackathon";
   function show() {
     document.getElementById("hack_mode").style.visibility= "visible" ;
   }
@@ -43,6 +38,7 @@ function saveData()
   var dinner = document.getElementById('dinner').value;
 
   chrome.storage.sync.set({
+    prof: profi,
     sleep: sleep,
     breakfast: breakfast,
     lunch: lunch,
