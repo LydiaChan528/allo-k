@@ -11,12 +11,13 @@
 	},
 
 	"permissions": [
-		"storage" // Allows access to chrome.storage API
+		"storage",
+		"notifications"
 	],
 
-	"chrome_url_overrides": {
-		"newtab": "src/newtab.html"
-	},
+	"web_accessible_resources": [
+		"icons/TreeHacks-white-48.png"
+	],
 
 	"options_ui": {
 		"page": "src/options.html",
@@ -30,12 +31,8 @@
 	},
 
 	"content_scripts": [{
-		"matches": [
-			"*://*/*"
-		],
-		"js": [
-			"/src/content.js"
-		],
+		"matches": [ "*://*/*" ],
+		"js": [ "/src/content.js" ],
 		"run_at": "document_end"
 	}]
 }

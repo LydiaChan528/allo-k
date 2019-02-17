@@ -1,9 +1,18 @@
-/* File: popup.js
- * -----------------------
- * This javascript file restores settings when the DOM loads.
- * You shouldn't have to change this file unless you also
- * change the corresponding popup.html file.
- */
+console.log("Haiii!");
+
+var options = {
+	type: "basic",
+	title: "Hello There!",
+	message: "Made with <3",
+	iconUrl: "icons/TreeHacks-white-48.png"
+};
+
+alert("Hi"); 
+chrome.notifications.create(options, callback);
+
+function callback() {
+	console.log("Notified!");
+}
 
 document.addEventListener('DOMContentLoaded', function () {
 	var links = document.getElementsByTagName("a");
