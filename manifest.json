@@ -17,12 +17,12 @@
 	],
 
 	"background": {
-		"scripts": ["src/background.js"]
+		"scripts": ["src/data.js", "src/background.js"]
 	},
 
 	"options_page": "src/options.html",
 
-	// replace with graphics 
+	// replace with graphics
 	"browser_action": {
 		"default_icon": "icons/TreeHacks-white-19.png",
 		"default_title": "MadeCafe",
