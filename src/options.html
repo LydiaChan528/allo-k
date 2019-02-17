@@ -37,11 +37,11 @@
 				<h2>Step 1</h2>
 				<h3>Choose your starter pack</h3>
 
-				<img src="../icons/default.svg" alt="One energy drink" align="center" title = "Default" style="width:27%;height:30%;" onclick = "recordDefault()">
-				<img src="../icons/hourglass.svg" alt="Two energy drinks" align="center" title = "Deadline" style="width:35%;height:35%;" onclick = "recordDeadline()">
-				<img src="../icons/hackathon.svg" alt="Many energy drink" align="center" title = "Hackathon" style="width:35%;height:35%;" onclick = "recordHackathon()">
+				<img src="../icons/default.svg" alt="One energy drink" align="center" title = "Default" style="width:27%;height:30%;" id="def1">
+				<img src="../icons/hourglass.svg" alt="Two energy drinks" align="center" title = "Deadline" style="width:35%;height:35%;" id="dead1">
+				<img src="../icons/hackathon.svg" alt="Many energy drink" align="center" title = "Hackathon" style="width:35%;height:35%;" id="hack1">
 
-				<p>Default&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Deadline&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Hackathon</p>
+				<p>Default&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Deadline&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Hackathon&emsp;</p>
 
 			</div>
 		</section>
@@ -69,16 +69,16 @@
 					<input type="text" id="dinner" name="dinner">
 				</form>
 
-				<div class = "hack_mode">
+				<div id="hack_mode" class = "hack_mode">
 					<form>
-						<img src="../icons/hackathon.svg" alt="Hacking" style="float:left;width:350px;height:350px;"><br><br><br>
-						<label for="hack">Finish hacking? (in hours)</label><br>
+						<img src="../icons/hourglass.svg" alt="Hacking" style="float:left;width:350px;height:350px;"><br><br><br>
+						<label for="hack">Finish hacking? (in remaining hours)</label><br>
 						<input type="text" id="hack" name="hack">				
 					</form>
 				</div>
 
 				<form>
-					<input type="submit" value="reset boi" onclick="saveData();">
+					<input type="submit" value="hopefully you save" id="save_data">
 				</form>
 
 
