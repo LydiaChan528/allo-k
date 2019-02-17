@@ -36,8 +36,8 @@
       {"title": "No sleeep", "msg": "We don't have time for that.", "hr": 3, "min": 0, "img": "/icons/favicon_full.png"},
       {"title": "Breakfast", "msg": "Take an acai bowl break.", "hr": 8, "min": 30, "img": "/icons/favicon_full.png"},
       {"title": "Lunch", "msg": "Find yourself outside with food.", "hr": 12, "min": 0, "img": "/icons/favicon_full.png"},
-      {"title": "Afternoon snack", "msg": "Go get that boba.", "hr": 14, "min": 55, "img": "/icons/favicon_full.png"},
-      {"title": "Dinner", "msg": "Power through. Grab a burrito.", "hr": 19, "min": 0, "img": "/icons/favicon_full.png"}
+      {"title": "Dinner", "msg": "Power through. Grab a burrito.", "hr": 19, "min": 0, "img": "/icons/favicon_full.png"},
+      {"title": "Afternoon snack", "msg": "Go get that boba.", "hr": 14, "min": 55, "img": "/icons/favicon_full.png"}
     ],
     "interval": [
       {"title": "Water", "msg": "Don't spill.", "min": 60, "img": "/icons/favicon_full.png"},

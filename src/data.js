@@ -14,13 +14,42 @@ var syncData = "def";
 
 //get the reminder list
 function readData(callback) {
+	chrome.storage.sync.get({
+		prof: "default",
+		sleep: "23:30",
+		breakfast: "09:00",
+		lunch: "12:00",
+		dinner: "18:00",
+		deadline: "25000"
+	}, function(items) {
+		syncData = items;
+	});
 	loadJSON(function(resp) {
+		console.log(syncData);
+		//default stuff
 		var parseObj = JSON.parse(resp);
-		console.log(parseObj);
-		var prof = "default";
-		setTimeReminders = parseObj[prof]["setTimes"];
-		intervalReminders = parseObj[prof]["interval"];
-		oneOffReminders = parseObj[prof]["oneOff"];
+		setTimeReminders = parseObj[syncData.prof]["setTimes"];
+		intervalReminders = parseObj[syncData.prof]["interval"];
+		oneOffReminders = parseObj[syncData.prof]["oneOff"];
+		//user options
+		if (syncData.prof != "default") {
+			oneOffReminders[0].hr = parseInt(syncData.deadline);
+		}
+		//ahhh such bad code
+		var tim = getTimes(syncData.sleep);
+		setTimeReminders[0].hr = tim[0];
+		setTimeReminders[0].min = tim[1];
+		tim = getTimes(syncData.breakfast);
+		setTimeReminders[1].hr = tim[0];
+		setTimeReminders[1].min = tim[1];
+		tim = getTimes(syncData.lunch);
+		setTimeReminders[2].hr = tim[0];
+		setTimeReminders[2].min = tim[1];
+		tim = getTimes(syncData.dinner);
+		setTimeReminders[3].hr = tim[0];
+		setTimeReminders[3].min = tim[1];
+
+
 		console.log(setTimeReminders);
 		console.log(intervalReminders);
 		console.log(oneOffReminders);
@@ -29,6 +58,11 @@ function readData(callback) {
 		callback();
 	});
 	console.log("Read data!");
+}
+
+function getTimes(str) {
+	var res = str.split(":");
+	return [parseInt(res[0]), parseInt(res[1])];
 }
 
 //https://codepen.io/KryptoniteDove/post/load-json-file-locally-using-pure-javascript
