@@ -17,8 +17,7 @@
 	],
 
 	"background": {
-		"scripts": ["src/background.js"],
-		"persistent": false
+		"scripts": ["src/background.js"]
 	},
 
 	"options_page": "src/options.html",
