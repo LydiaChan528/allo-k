@@ -22,9 +22,24 @@ p {
 	font-size: 40px;
 }
 
-html,body {
+/*html,body {
 	margin:0;
 	height:100%;
+}*/
+body {
+
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: hotpink;
 }
 
 .colorbox {
@@ -41,7 +56,10 @@ html,body {
 
 .box_gray {
 	background-color: #E2EDD8;
-	/*border-bottom: 10px solid green;*/
+}
+
+.box_title {
+	background-image: url("/icons/allo_page.png");
 }
 
 .box_light_green {
