@@ -1,6 +1,14 @@
 {
-  "default" : [
+  "default": [
     {"title": "Sleeep", "msg": "Hai", "hr": 4, "min": 4, "img": "/icons/favicon_full.png"},
     {"title": "No sleeep", "msg": "hola", "hr": 4, "min": 5, "img": "/icons/favicon_full.png"}
+  ],
+
+  "deadline": [
+
+  ],
+
+  "hackathon": [
+
   ]
 }
