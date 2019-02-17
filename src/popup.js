@@ -5,7 +5,6 @@
  * change the corresponding popup.html file.
  */
 
-
 document.addEventListener('DOMContentLoaded', function () {
 	var links = document.getElementsByTagName("a");
 	for (var i = 0; i < links.length; i++) {
