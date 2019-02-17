@@ -34,7 +34,7 @@
 		<section aria-label="Step 1">
 			<div class="colorbox box_dark_green">
 				<h2>Step 1</h2>
-				<p>Choose your starter pack</p>
+				<h3>Choose your starter pack</h3>
 
 				<img src="../icons/student.svg" alt="One energy drink" align="center" style="width:27%;height:30%;" onclick = "recordStudent();">
 				<img src="../icons/deadline.svg" alt="Two energy drinks" align="center" style="width:35%;height:35%;" onclick = "recordDeadline();">
@@ -45,27 +45,51 @@
 		<section aria-label="Step 2">
 			<div class="colorbox box_gray">
 				<h2>Step 2</h2>
-				<p>Answer these questions</p>
-			</div>
-		</section>
+				<h3>When do you plan to... (format hh:mm)</h3>
 
-		<section aria-label="Step 2.5">
-			<div class="colorbox box_light_green">
-				<h2>Step 2.5</h2>
-				<p>For hackathon and deadline</p>
+				<form>
+					<img src="../icons/sleep.svg" alt="Sleep Time" style="float:left;width:100px;height:100px;"><br><br><br>
+					<label for="sleep">Sleep?</label><br>
+					<input type="text" id="sleep" name="sleep">
+
+					<img src="../icons/breakfast.svg" alt="Breakfast" style="float:left;width:100px;height:100px;"><br><br><br>
+					<label for="breakfast">Eat breakfast?</label><br>
+					<input type="text" id="breakfast" name="breakfast">
+
+					<img src="../icons/breakfast.svg" alt="Lunch" style="float:left;width:100px;height:100px;"><br><br><br>
+					<label for="lunch">Eat lunch?</label><br>
+					<input type="text" id="lunch" name="lunch">
+
+					<img src="../icons/breakfast.svg" alt="Dinner" style="float:left;width:100px;height:100px;"><br><br><br>
+					<label for="dinner">Eat dinner?</label><br>
+					<input type="text" id="dinner" name="dinner">
+				</form>
+
+				<div class = "hack_mode">
+					<form>
+						<img src="../icons/breakfast.svg" alt="Hacking" style="float:left;width:100px;height:100px;"><br><br><br>
+						<label for="hack">Finish hacking? (in hours)</label><br>
+						<input type="text" id="hack" name="hack">				
+					</form>
+				</div>
+
+				<form>
+					
+				</form>
+
+
+				
 			</div>
 		</section>
 
 		<section aria-label="Step 3">
-			<div class="colorbox box_dark_green">
+			<div class="colorbox box_light_green">
 				<h2>Step 3</h2>
-				<p>Download!</p>
+				<h3>Download!</h3>
 			</div>
-		</section>
+		</section
 
-		<!-- </section> -->
-
-		Favorite color:
+		<!-- Favorite color:
 		<select id="color">
 		 <option value="red">red</option>
 		 <option value="green">green</option>
@@ -79,7 +103,7 @@
 		</label>
 
 		<div id="status"></div>
-		<button id="save">Save</button>
+		<button id="save">Save</button> -->
 
 		<script src="options.js"></script>
 	</body>
